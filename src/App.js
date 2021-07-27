@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import RegisterUser from './components/register/RegisterUser';
+import AddWorkout from './components/add-workout/AddWorkout';
+import SeeWorkouts from './components/see-workouts/SeeWorkouts';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SeeWorkouts />
+      <AddWorkout />
+      <RegisterUser />
+      <p class="center-div">
+        Code of the backend here:
+        https://github.com/yisus44/exercise-tracker-graph
+      </p>
     </div>
   );
 }
