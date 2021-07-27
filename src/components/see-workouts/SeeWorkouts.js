@@ -39,6 +39,7 @@ export default function SeeWorkouts() {
               ${workout?.duration}
               ${workout?.id}
               `);
+              return workout.id;
             });
           } catch (error) {
             console.log(error);
